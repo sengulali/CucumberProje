@@ -1,0 +1,108 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Oncesinde Caliscak Method (BeforeMethod)",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12277000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici amazon sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.AmazonStepDefinition.kullanici_amazon_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-24T19:50:11.272Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "TC02_kullanici amazonda arama yapar",
+        "description": "",
+        "id": "amazon-arama;tc02-kullanici-amazonda-arama-yapar",
+        "after": [
+          {
+            "result": {
+              "duration": 403000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2853000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "kullanici aramakutusuna headphones yazar ve arar",
+            "match": {
+              "location": "stepdefinitions.AmazonStepDefinition.kullanici_aramakutusuna_headphones_yazar_ve_arar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 132000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "kullanici sonuc sayisini ekrana yazdirir",
+            "match": {
+              "location": "stepdefinitions.AmazonStepDefinition.kullanici_sonuc_sayisini_ekrana_yazdirir()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@urunarama"
+          },
+          {
+            "name": "@amazon"
+          }
+        ]
+      }
+    ],
+    "name": "Amazon Arama",
+    "description": "",
+    "id": "amazon-arama",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/amazonsearch.feature",
+    "tags": [
+      {
+        "name": "@urunarama",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
