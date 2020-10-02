@@ -16,21 +16,18 @@ public class Hooks {
     public void setUp(){
         System.out.println("setUp Çalıştı.");
     }
-
     // TestNG'deki @AfterMethod gibi çalışır.
     // Her senaryodan sonra çalışır.
     @After
     public void tearDown(Scenario scenario){
         System.out.println("tearDown çalıştı.");
-
         // ekran görüntüsü almak için bu sabit kodu kullanabiliriz.
         final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-
         // eğer senaryonun sonucu FAILED ise(başarısızsa) ekran görüntüsünü rapora ekleyebilirsin.
         if(scenario.isFailed()){
             scenario.embed(screenshot , "image/png");
         }
-
+        Driver.closeDriver();
     }
 
 

@@ -307,12 +307,4 @@ Feature: Koala Palace
     And kullanici hoteledit save butonuna tiklar
     Then kullanici hoteledit "Hotel was updated successfully" yazisini dogrular
 
-  @hotelroomedit
-  Scenario: TC28_kullanici hotelroomedit sayfasinda properties bolumundeki veriyi siler
-    Given kullanici hotelroomedit "http://www.kaolapalace-qa-environment2.com/admin/HotelRoomAdmin/Edit?Id=13" sayfasina gider
-    And kullanici hotelroomedit sayfasinda properties bolumune tiklar
-    And kullanici hotelroomedit sayfasinda properties bolumunde remove butonuna tiklar
-    And kullanici hotelroomedit sayfasinda remove alertinde ok butonuna tiklar
-    Then kullanici hotelroomedit sayfasinda verinin silindigini dogrular
-
 

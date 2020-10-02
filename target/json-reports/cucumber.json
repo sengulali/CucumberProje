@@ -3,32 +3,56 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "Oncesinde Caliscak Method (BeforeMethod)",
+        "line": 4,
+        "name": "Koala Palace Admin Giris",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 12277000000,
+              "duration": 25262000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "kullanici amazon sayfasina gider",
+            "line": 5,
+            "name": "kullanici koalapalace admin sayfasina gider",
             "match": {
-              "location": "stepdefinitions.AmazonStepDefinition.kullanici_amazon_sayfasina_gider()"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 620000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici kullaniciadi ve sifresini girer",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106681000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "kullanici giris islemini gerceklestirir",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
+            },
+            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-09-24T19:50:11.272Z",
+        "start_timestamp": "2020-10-02T18:38:04.889Z",
         "before": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +60,14 @@
             }
           }
         ],
-        "line": 6,
-        "name": "TC02_kullanici amazonda arama yapar",
+        "line": 300,
+        "name": "TC27_kullanici hoteledit sayfasinda verileri girerek hotel bilgilerini gunceller",
         "description": "",
-        "id": "amazon-arama;tc02-kullanici-amazonda-arama-yapar",
+        "id": "koala-palace;tc27-kullanici-hoteledit-sayfasinda-verileri-girerek-hotel-bilgilerini-gunceller",
         "after": [
           {
             "result": {
-              "duration": 403000000,
+              "duration": 1280000000,
               "status": "passed"
             },
             "match": {
@@ -56,47 +80,161 @@
         "steps": [
           {
             "result": {
-              "duration": 2853000000,
+              "duration": 1748000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "kullanici aramakutusuna headphones yazar ve arar",
+            "line": 301,
+            "name": "kullanici hoteledit \"http://www.kaolapalace-qa-environment2.com/admin/HotelAdmin/Edit?Id\u003d4\" sayfasina gider",
             "match": {
-              "location": "stepdefinitions.AmazonStepDefinition.kullanici_aramakutusuna_headphones_yazar_ve_arar()"
+              "arguments": [
+                {
+                  "val": "\"http://www.kaolapalace-qa-environment2.com/admin/HotelAdmin/Edit?Id\u003d4\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_sayfasina_gider(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 207000000,
+              "status": "passed"
+            },
+            "line": 302,
+            "name": "kullanici hoteledit code bolumunu \"999\" ile gunceller",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"999\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_code_bolumunu_ile_gunceller(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 132000000,
+              "duration": 303000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "kullanici sonuc sayisini ekrana yazdirir",
+            "line": 303,
+            "name": "kullanici hoteledit name bolumunu \"sonDers\" ile gunceller",
             "match": {
-              "location": "stepdefinitions.AmazonStepDefinition.kullanici_sonuc_sayisini_ekrana_yazdirir()"
+              "arguments": [
+                {
+                  "val": "\"sonDers\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_name_bolumunu_ile_gunceller(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 207000000,
+              "status": "passed"
+            },
+            "line": 304,
+            "name": "kullanici hoteledit adress bolumunu \"Cikmaz sk.\" ile gunceller",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cikmaz sk.\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_adress_bolumunu_ile_gunceller(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 197000000,
+              "status": "passed"
+            },
+            "line": 305,
+            "name": "kullanici hoteledit phone bolumunu \"0123456789\" ile gunceller",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0123456789\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_phone_bolumunu_ile_gunceller(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 218000000,
+              "status": "passed"
+            },
+            "line": 306,
+            "name": "kullanici hoteledit mail bolumunu \"sonders@son.com\" ile gunceller",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sonders@son.com\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_mail_bolumunu_ile_gunceller(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119000000,
+              "status": "passed"
+            },
+            "line": 307,
+            "name": "kullanici hoteledit save butonuna tiklar",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_save_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1162000000,
+              "status": "passed"
+            },
+            "line": 308,
+            "name": "kullanici hoteledit \"Hotel was updated successfully\" yazisini dogrular",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hotel was updated successfully\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_yazisini_dogrular(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@urunarama"
+            "name": "@koalapalace"
           },
           {
-            "name": "@amazon"
+            "name": "@hoteledit"
           }
         ]
       }
     ],
-    "name": "Amazon Arama",
+    "name": "Koala Palace",
     "description": "",
-    "id": "amazon-arama",
+    "id": "koala-palace",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/amazonsearch.feature",
+    "uri": "file:src/test/resources/features/koalapalace.feature",
     "tags": [
       {
-        "name": "@urunarama",
+        "name": "@koalapalace",
         "type": "Tag",
         "location": {
           "line": 1,
